@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Chat Ina</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <h1>Página de Teste - Chat Ina</h1>
+    <p>Esta é uma página de demonstração do widget de chat.</p>
+    
+    <div id="chat-root"></div>
+
+    <script type="module">
+        import ChatWidget from './chat-widget.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const chat = new ChatWidget();
+            chat.init();
+        });
+    </script>
+</body>
+</html>
